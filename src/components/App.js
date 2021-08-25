@@ -27,7 +27,6 @@ function App() {
     handleRecipeDelete,
     handleRecipeSelect,
     handleRecipeChange,
-    handleRecipeReverseName
   }
 
   function handleRecipeSelect(id) {
@@ -63,12 +62,7 @@ function App() {
     }
     setRecipes(recipes.filter(recipe => recipe.id !== id))
   }
-  function handleRecipeReverseName(id){
-    const newRecipes = [...recipes]
-   let recipe=newRecipes.filter(r=>r.id===id)
-    const name =recipe.name+'r'
-    setRecipes(...recipes)
-  }
+
  
   const handleSearch = (event) => {
     let value = event.target.value.toLowerCase();
