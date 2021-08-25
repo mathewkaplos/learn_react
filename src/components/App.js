@@ -67,7 +67,6 @@ function App() {
     const newRecipes = [...recipes]
    let recipe=newRecipes.filter(r=>r.id===id)
     const name =recipe.name+'r'
-   const newrecipe={...recipe,name:name}
     setRecipes(...recipes)
   }
  

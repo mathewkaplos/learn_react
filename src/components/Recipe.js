@@ -7,7 +7,6 @@ export default function Recipe(props) {
   const {
      handleRecipeDelete,
       handleRecipeSelect,
-      handleRecipeReverseName
      }   = useContext(RecipeContext)
   const {
     id,
